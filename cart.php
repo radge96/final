@@ -111,8 +111,8 @@
 
                                            <!-- ?php echo $pro_qty; ?>-->
 
-                                           <div class="radio">
-                                             <label><input type="radio" name="modificar_1[]" value="<?php echo $pro_id; ?>">-Cambiar Cantidad</label>
+                                           <div class="checkbox">
+                                             <label><input type="checkbox" name="modificar[]" value="<?php echo $pro_id; ?>">-Cambiar Cantidad</label>
                                            </div>
 
                                           <select name="Qty" id="" class="form-control"><!-- select Begin -->
@@ -225,7 +225,7 @@
 
                         }
 
-                        foreach($_POST['modificar_1'] as $upgrade_id){
+                        foreach($_POST['modificar'] as $upgrade_id){
 
                             $var=$_POST['Qty'];
 
